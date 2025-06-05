@@ -1,4 +1,7 @@
-
-# pixi environments
+# Pixi environments
 .pixi
 *.egg-info
+
+# Nextflow
+.nextflow*
+work

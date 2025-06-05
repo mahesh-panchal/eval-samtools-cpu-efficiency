@@ -16,6 +16,7 @@ process SAMTOOLS_FASTA {
     tuple val(meta), path("*_interleaved.fasta.gz"), optional:true, emit: interleaved
     tuple val(meta), path("*_singleton.fasta.gz")  , optional:true, emit: singleton
     tuple val(meta), path("*_other.fasta.gz")      , optional:true, emit: other
+    tuple val(task.process), env('SLURM_JOB_ID')   , emit: slurmid
     path "versions.yml"                            , emit: versions
 
     when:
