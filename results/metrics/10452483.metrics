@@ -1,0 +1,12 @@
+SAMTOOLS_FASTA_ORIG
+Job ID: 10452483
+Cluster: dardel
+User/Group: mahpa906/mahpa906
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 14
+CPU Utilized: 00:02:05
+CPU Efficiency: 8.04% of 00:25:54 core-walltime
+Job Wall-clock time: 00:01:51
+Memory Utilized: 80.41 MB
+Memory Efficiency: 0.65% of 12.00 GB
