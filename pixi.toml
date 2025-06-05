@@ -7,6 +7,7 @@ version = "0.1.0"
 
 [tasks]
 test = "nextflow run main.nf -profile hpc"
+clean-work = "nextflow clean -f -before $(nextflow log -q | tail -n 1)"
 
 [dependencies]
 nextflow = ">=25.4.3,<26"

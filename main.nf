@@ -3,7 +3,7 @@ include { SAMTOOLS_FASTA as SAMTOOLS_FASTA_MOD  } from './modules/local/samtools
 
 workflow {
     ch_bam = Channel.of(
-        tuple([ id: params.species, single_end: true,  ], bam_url)
+        tuple([ id: params.species, single_end: true,  ], params.bam_url)
     )
     FETCH_FILE( ch_bam )
     SAMTOOLS_FASTA_ORIG( FETCH_FILE.out.bam, false )
